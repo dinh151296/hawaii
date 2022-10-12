@@ -1,0 +1,280 @@
+body
+    &.tt-ph-visible
+        #tt-header 
+            background-color: transparent
+            .tt-logo-light
+                display: block!important
+            .tt-logo-dark
+                display: none!important
+            
+            a 
+                color: #fff
+            &::before
+                opacity: 0
+                transform: translateY(-100%)
+        .tt-main-menu-list 
+            > li 
+                > a
+                    // color: #ec6636
+                    // color: #cbae75
+                    // color: #111
+body:not(.tt-light-bg-on):not(.ph-bg-image-on) .tt-sd-arrow-inner, body:not(.tt-light-bg-on):not(.ph-bg-image-on) .tt-sd-arrow::before, body:not(.tt-light-bg-on):not(.ph-bg-image-on) .tt-sd-arrow::after 
+    background-color: rgba(#fff,1)
+.tt-np-title
+    color: #fff!important
+    
+    a
+        color: #fff!important
+.tt-np-subtitle,body:not(.tt-light-bg-on):not(.ph-bg-image-on) .tt-sd-text
+    color: #fff!important
+#tt-header 
+    .tt-logo-light
+        display: none!important
+    .tt-logo-dark
+        display: block!important
+    &::before
+        z-index: -1
+        transition: all .5s ease
+        transform: translateY(0)
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: rgba(#fff,0.7)
+        backdrop-filter: saturate(180%) blur(20px)
+    a
+        color: #111
+.text-stroke-light
+    -webkit-text-stroke-color: #cbae75
+.text-or
+    color: #cbae75
+#page-header
+    &.ph-cap-lg 
+        .ph-caption-title
+            font-size: clamp(38px, 6vw, 80px)
+
+.tt-btn-link > *, .tt-btn-link > *::after,
+#tt-footer a,
+#tt-footer .footer-social,
+#tt-footer .tt-copyright.text-gray .tt-btn-link > *,
+.tt-btn-link:hover > *, .tt-btn-link:hover > *::after
+    color: #111
+.section-img-scroll
+    position: relative
+    background-color: #212021
+    padding: 80px 0
+    padding-bottom: 30px
+    .thumb-img
+        margin-bottom: 50px
+    .text-sticky
+        // left: 20%
+        // right: 20%
+        width: 100%
+        text-align: center
+        z-index: 999
+        position: absolute
+        .tt-heading
+            max-width: 900px
+            padding: 0 20px
+            margin: auto
+            .tt-heading-title
+                font-size: calc(100px + 2vw)
+                color: #fff
+                opacity: 0.8
+                @media screen and ( max-width: 768px )
+                    font-size: calc(50px + 2vw)
+                    
+                // font-family: 'Poppins', sans-serif
+                // font-weight: 300
+.service-box
+    position: relative
+    
+    .border-ani
+        span 
+            position: absolute
+            background-color: var(--tt-main-color)
+            transition: all .3s ease!important
+            &:nth-of-type(1)
+                width: 100%
+                top: 0
+                left: 0
+                height: 2px
+                animation: border-ani 5s infinite
+            &:nth-of-type(2)
+                height: 100%
+                width: 2px
+                top: 0
+                right: 0
+                animation: border-ani-2 5s infinite
+            &:nth-of-type(3)
+                width: 100%
+                bottom: 0
+                left: 0
+                height: 2px
+                animation: border-ani-3 5s infinite
+            &:nth-of-type(4)
+                height: 100%
+                width: 2px
+                top: 0
+                left: 0
+                animation: border-ani-4 5s infinite
+    &:hover 
+        .border-ani
+            span 
+                animation-fill-mode: both
+                
+                animation-iteration-count: 1
+                // &:nth-of-type(1)
+                //     transform: scaleX(1)!important
+                // &:nth-of-type(2)
+                //     transform: scaleY(1)!important
+                // &:nth-of-type(3)
+                //     transform: scaleX(1)!important
+                // &:nth-of-type(4) 
+                //     transform: scaleY(1)!important
+                // animation-play-state: paused!important
+                
+
+
+
+@keyframes border-ani
+    0% 
+        transform: scaleX(0)
+        transform-origin: left
+    50%
+        transform: scaleX(1)
+        transform-origin: left
+    50.1%
+        transform: scaleX(1)
+        transform-origin: right
+    100%
+    
+        transform: scaleX(0)
+        transform-origin: right
+@keyframes border-ani-2
+    0% 
+        transform: scaleY(0)
+        transform-origin: top
+    50%
+        transform: scaleY(1)
+        transform-origin: top
+    50.1%
+        transform: scaleY(1)
+        transform-origin: bottom
+    100%
+    
+        transform: scaleY(0)
+        transform-origin: bottom
+@keyframes border-ani-3
+    0% 
+        transform: scaleX(0)
+        transform-origin: right
+    50%
+        transform: scaleX(1)
+        transform-origin: right
+    50.1%
+        transform: scaleX(1)
+        transform-origin: left
+    100%
+    
+        transform: scaleX(0)
+        transform-origin: left
+@keyframes border-ani-4
+    0% 
+        transform: scaleY(0)
+        transform-origin: bottom
+    50%
+        transform: scaleY(1)
+        transform-origin: bottom
+    50.1%
+        transform: scaleY(1)
+        transform-origin: top
+    100%
+    
+        transform: scaleY(0)
+        transform-origin: top
+.logo-footer
+    // max-width: 150px
+    display: flex
+    width: 100%
+    justify-content: flex-start
+    margin-bottom: 20px
+    @media screen and ( max-width: 1024px )
+        justify-content: center
+    img 
+        object-position: left
+        max-height: 48px
+        width: 100%
+        object-fit: contain
+        @media screen and ( max-width: 1024px )
+            object-position: center
+
+.menu-footer
+    @media screen and ( max-width: 1024px )
+        justify-content: center
+        .tt-row
+            justify-content: center
+            .footer-col
+                padding: 0 15px
+    .menu-footer-link
+        h4 
+            margin: 0 
+            margin-bottom: 15px
+            font-size: 24px
+        p 
+            margin-bottom: 0
+        a 
+            transition: all .3s ease
+            &:hover 
+                color: #f26522!important
+.menu-link-phone-email
+    .tt-row
+        width: 100%
+        border: 1px solid #212021
+        border-width: 1px 0px
+        margin-bottom: 30px
+        margin-top: 30px
+        .footer-col
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            padding: 30px
+            align-items: center
+            padding-right: 0px
+            padding-left: 30px
+            @media screen and ( max-width: 1024px )
+                flex-direction: column
+                align-items: flex-start
+            @media screen and ( max-width: 768px )
+                padding: 20px
+                width: 100%
+                padding-right: 30px
+                padding-left: 0
+            &:first-child
+                padding-right: 30px
+                padding-left: 0
+                border-right: 1px solid #212021
+                @media screen and ( max-width: 768px )
+                    border-right: unset
+                    border-bottom: 1px solid #212021
+            .link-a
+                a
+                    transition: all .3s ease
+                    font-size: 24px!important
+                    @media screen and ( max-width: 575.82px )
+                        font-size: 18px!important
+                    &:hover 
+                        color: #f26522!important
+.tt-portfolio-slider
+    .content
+        padding: 25px
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: center
