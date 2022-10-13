@@ -4,7 +4,7 @@
 
 :root {
 	--tt-main-bg-color: #f3f3f3; 
-	--tt-main-color: #ec6636;
+	--tt-main-color: #8e6d45;
 	--tt-ghost-color: #e9e8e5;
 }
 
@@ -61,7 +61,9 @@ body:not(.tt-portfolio-slider-on) #ball {
 	color: #111;
 }
 
-.ph-appear{color: #f26522;}
+.ph-appear	{
+	color: var(--tt-main-color);
+}
 
 /* ------------------------------------------------------------- *
  * Header
@@ -597,7 +599,7 @@ body.pi-full-on:not(.page-header-on) .portfolio-interactive-ghost {
 /* -------------------------------------------------------------------- */
 
 .tt-heading-title {
-	color: #f26522;
+	color: var(--tt-main-color);
 }
 .tt-heading-subtitle {
 	color: #616161;

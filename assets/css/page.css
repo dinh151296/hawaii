@@ -11,6 +11,14 @@
     object-fit: contain;
 }
 
+.tt-ol-menu-list li a {
+    color: #111111 !important;
+}
+
+.tt-ol-menu-list li a:hover {
+    color: var(--tt-main-color) !important;
+}
+
 /* css section gallery - page gallery */
 .gallery {
     display: flex;

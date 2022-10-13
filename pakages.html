@@ -4,7 +4,7 @@
 	<head>
 
 		<!-- Title -->
-		<title>Gallery | anniehawaiipicnic</title>
+		<title>Packages | anniehawaiipicnic</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -30,7 +30,6 @@
 		<link rel="stylesheet" href="assets/css/helper.css">
 		<link rel="stylesheet" href="assets/css/layout.css">
 		<link rel="stylesheet" href="assets/css/light-style.css">
-		<!-- <link rel="stylesheet" href="assets/css/custom.min.css"> -->
 		<link rel="stylesheet" href="assets/css/custom2.css">
 		<link rel="stylesheet" href="assets/css/page.css">
 	</head>
@@ -48,11 +47,14 @@
 				<div class="ptr-overlay"></div>
 				<div class="ptr-preloader">
 					<div class="ptr-prel-content">
+						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
 						<img src="assets/img/logo.svg" class="ptr-prel-image tt-logo-light" alt="Logo">
-					</div> 
-				</div> 
+					</div> <!-- /.ptr-prel-content -->
+				</div> <!-- /.ptr-preloader -->
 			</div>
-			
+			<!-- End page transition -->
+
+			<!-- begin loading logo screen -->
 			<div class="preloader">
 				<div class="preloader-line">
 					<div></div>
@@ -64,7 +66,7 @@
 					<div></div>
 				</div>
 				<div class="preloader-logo">
-					
+					<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In  -->
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1204.78 349.09">
 						<g id="ba1f9685-0360-43cd-ab0f-31b52b67090c" data-name="Layer 2">
 						  <g id="fed2a369-36cf-459c-941a-996bc8741372" data-name="Layer 1">
@@ -191,6 +193,7 @@
 													<a href="contact.html">Contact</a>
 												</li>
 											</ul>
+
 											<!-- Begin overlay menu social links 
 											===================================== -->
 											<ul class="tt-ol-menu-social">
@@ -202,7 +205,6 @@
 												<li><a href="" target="_blank" rel="noopener">Behance</a></li>
 											</ul>
 											<!-- End overlay menu social links -->
-
 										</div> <!-- /.tt-ol-menu-content -->
 									</div> <!-- /.tt-ol-menu-inner -->
 								</div> <!-- /.tt-ol-menu-holder -->
@@ -219,293 +221,265 @@
 				*********** Begin content wrap *********** 
 				************************************** -->
 				<div id="content-wrap">
-					<div id="page-header" class="ph-cap-lg ph-ghost-scroll ph-image-cropped ph-content-parallax">
-						<div class="page-header-inner tt-wrap">
-							<div class="ph-caption max-width-1000">
-								<div class="ph-caption-subtitle">
-									<div class="ph-appear">album</div>
-								</div>
-								<h1 class="ph-caption-title">
-									<div class="ph-appear">Gallery</div> <!-- You can use <br> to break a text line if needed -->
-								</h1>
-								<div class="ph-caption-title-ghost">
-									<div class="ph-appear">album</div>
-								</div>
-							</div>
-							<!-- End page header caption -->
-
-						</div> <!-- /.page-header-inner -->
-
-						<!-- Begin scroll down (you can change "data-offset" to set scroll top offset) 
-						======================= -->
-						<div class="tt-scroll-down">
-							<a href="#page-content" class="tt-sd-inner ph-appear" data-offset="0">
-								<div class="tt-sd-arrow">
-									<div class="tt-sd-arrow-inner"></div>
-								</div>
-								<div class="tt-sd-text">Scroll</div>
-							</a>
-						</div>
-						<!-- End scroll down -->
-						
-					</div>
-					<!-- End page header -->
-
-
 					<!-- *************************************
 					*********** Begin page content *********** 
 					************************************** -->
 					<div id="page-content">
 
 
-						<!-- =======================
-						///// Begin tt-section section gallery /////
-						============================ 
-						-->
-						<div id="sdc-target" class="tt-section padding-top-150 padding-bottom-150">
-							<div class="tt-section-inner max-width-1900">
+						<div class="tt-portfolio-carousel pci-hover cursor-drag-mouse-down pc-scale-down" data-simulate-touch="true" data-mousewheel="true" data-keyboard="true" data-grab-cursor="true" data-pagination-type="progressbar">
 
-								<!-- Begin portfolio list 
-								========================== 
-								* Use class "pli-hover" to enable hover effect.
-								* Use class "pli-cropped" to crop images (it sets the images to a fixed height).
-								* Use class "pl-alter" to enable an alternative layout.
-								-->
-								<div class="portfolio-list pl-alter pli-cropped pli-hover">
+							<!-- Begin swiper container -->
+							<div class="swiper">
 
-									<!-- Begin portfolio list item 
-									===============================
-									* Use class "pli-image-is-light" if needed, it makes the caption visible better if you use light image. 
-									-->
-									<a href="" class="portfolio-list-item" data-cursor="View<br>Album">
+								<!-- Begin swiper wrapper (required) -->
+								<div class="swiper-wrapper">
 
-										<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". No effect if "pli-image-is-light" used on "portfolio-list-item"! -->
-										<figure class="pli-image cover-opacity-2">
-											<img class="anim-image-parallax tt-lazy" src="assets/img/new/package-02.jpg" data-src="assets/img/new/package-02.jpg" alt="image">
-										</figure> <!-- /.pli-image -->
+									<!-- Begin swiper slide 
+									======================== -->
+									<div class="swiper-slide">
 
-										<div class="pli-caption-front">
-											<div class="pli-caption">
-												<div class="pli-categories-wrap">
-													<div class="pli-category">People</div>
-													<!-- <div class="pli-category">Varia</div> -->
-												</div> <!-- /.pli-categories-wrap -->
+										<!-- Begin portfolio carousel item 
+										===================================
+										* Use class "pci-image-is-light" if needed, it makes the caption visible better (useful if you use light image). No effect on smaller screens!
+										-->
+										<a href="pakages-detail.html" class="tt-portfolio-carousel-item" data-cursor="View<br>Package">
+											<div class="tt-pci-inner">
 
-												<h2 class="pli-title">Elegant<br class="hide-from-sm"> Women</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-											</div> <!-- /.pli-caption -->
-										</div> <!-- /.pli-caption-front -->
+												<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css". -->
+												<figure class="tt-pci-image-wrap cover-opacity-2">
+													<img class="tt-pci-image swiper-lazy" src="./assets/img/new/package-05.jpg" data-src="./assets/img/new/package-05.jpg" alt="Image">
+												</figure> <!-- /.tt-pci-image-wrap -->
 
-										<div class="pli-caption pli-caption-back">
-											<div class="pli-categories-wrap">
-												<div class="pli-category">People</div>
-												<!-- <div class="pli-category">Varia</div> -->
-											</div> <!-- /.pli-categories-wrap -->
+												<div class="tt-pci-caption-front">
+													<div class="tt-pci-caption">
+														<div class="tt-pci-caption-inner">
+															<div class="tt-pci-categories">
+																<div class="tt-pci-category">events</div>
+																<!-- <div class="tt-pci-category">Varia</div> -->
+															</div> <!-- /.tt-pci-categories -->
+															<h2 class="tt-pci-title">Family Party<br class="hide-from-sm">Picnic</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+														</div> <!-- /.tt-pci-caption-inner -->
+													</div> <!-- /.tt-pci-caption -->
+												</div> <!-- /.tt-pci-caption-front -->
 
-											<h2 class="pli-title">Elegant<br class="hide-from-sm"> Women</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-										</div> <!-- /.pli-caption -->
+												<div class="tt-pci-caption tt-pci-caption-back">
+													<div class="tt-pci-caption-inner">
+														<div class="tt-pci-categories">
+															<div class="tt-pci-category">events</div>
+															<!-- <div class="tt-pci-category">Varia</div> -->
+														</div> <!-- /.tt-pci-categories -->
+														<h2 class="tt-pci-title">Family Party<br class="hide-from-sm">Picnic</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													</div> <!-- /.tt-pci-caption-inner -->
+												</div> <!-- /.tt-pci-caption -->
 
-										<div class="pli-counter"></div>
-									</a> 
-									<!-- End portfolio list item -->
+											</div> <!-- /.tt-pci-inner -->
+										</a>
+										<!-- End portfolio carousel item -->
 
-									<!-- Begin portfolio list item 
-									===============================
-									* Use class "pli-image-is-light" if needed, it makes the caption visible better if you use light image. 
-									-->
-									<a href="" class="portfolio-list-item" data-cursor="View<br>Album">
+									</div> 
+									<!-- End swiper slide -->
 
-										<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". No effect if "pli-image-is-light" used on "portfolio-list-item"! -->
-										<figure class="pli-image cover-opacity-2">
-											<img class="anim-image-parallax tt-lazy" src="assets/img/new/package-03.jpg" data-src="assets/img/new/package-03.jpg" alt="image">
-										</figure> <!-- /.pli-image -->
+									<!-- Begin swiper slide 
+									======================== -->
+									<div class="swiper-slide">
 
-										<div class="pli-caption-front">
-											<div class="pli-caption">
-												<div class="pli-categories-wrap">
-													<div class="pli-category">Creative</div>
-													<!-- <div class="pli-category">Varia</div> -->
-												</div> <!-- /.pli-categories-wrap -->
+										<!-- Begin portfolio carousel item 
+										===================================
+										* Use class "pci-image-is-light" if needed, it makes the caption visible better (useful if you use light image). No effect on smaller screens!
+										-->
+										<a href="pakages-detail.html" class="tt-portfolio-carousel-item" data-cursor="View<br>Package">
+											<div class="tt-pci-inner">
 
-												<h2 class="pli-title">The<br class="hide-from-sm"> Chase</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-											</div> <!-- /.pli-caption -->
-										</div> <!-- /.pli-caption-front -->
+												<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css". -->
+												<figure class="tt-pci-image-wrap cover-opacity-2">
+													<img class="tt-pci-image swiper-lazy" src="./assets/img/new/package-06.jpg" data-src="./assets/img/new/package-06.jpg" alt="Image">
+												</figure> <!-- /.tt-pci-image-wrap -->
 
-										<div class="pli-caption pli-caption-back">
-											<div class="pli-categories-wrap">
-												<div class="pli-category">Creative</div>
-												<!-- <div class="pli-category">Varia</div> -->
-											</div> <!-- /.pli-categories-wrap -->
+												<div class="tt-pci-caption-front">
+													<div class="tt-pci-caption">
+														<div class="tt-pci-caption-inner">	
+															<div class="tt-pci-categories">
+																<div class="tt-pci-category">events</div>
+																<!-- <div class="tt-pci-category">Varia</div> -->
+															</div> <!-- /.tt-pci-categories -->
+															<h2 class="tt-pci-title">Mini Photoshoot<br class="hide-from-sm"> Chase</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+														</div> <!-- /.tt-pci-caption-inner -->
+													</div> <!-- /.tt-pci-caption -->
+												</div> <!-- /.tt-pci-caption-front -->
 
-											<h2 class="pli-title">The<br class="hide-from-sm"> Chase</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-										</div> <!-- /.pli-caption -->
+												<div class="tt-pci-caption tt-pci-caption-back">
+													<div class="tt-pci-caption-inner">
+														<div class="tt-pci-categories">
+															<div class="tt-pci-category">events</div>
+															<!-- <div class="tt-pci-category">Varia</div> -->
+														</div> <!-- /.tt-pci-categories -->
+														<h2 class="tt-pci-title">Mini Photoshoot<br class="hide-from-sm"> Chase</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													</div> <!-- /.tt-pci-caption-inner -->
+												</div> <!-- /.tt-pci-caption -->
 
-										<div class="pli-counter"></div>
-									</a> 
-									<!-- End portfolio list item -->
+											</div> <!-- /.tt-pci-inner -->
+										</a>
+										<!-- End portfolio carousel item -->
 
-									<!-- Begin portfolio list item 
-									===============================
-									* Use class "pli-image-is-light" if needed, it makes the caption visible better if you use light image. 
-									-->
-									<a href="" class="portfolio-list-item" data-cursor="View<br>Album">
+									</div>
+									<!-- End swiper slide -->
 
-										<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". No effect if "pli-image-is-light" used on "portfolio-list-item"! -->
-										<figure class="pli-video cover-opacity-2">
-											<!-- You can use poster="your-video-poster.jpg" for a custom image while the video is loading. -->
-											<img class="anim-image-parallax tt-lazy" src="assets/img/new/package-04.jpg" data-src="assets/img/new/package-04.jpg" alt="image">
-										</figure> <!-- /.pli-video -->
+									<!-- Begin swiper slide 
+									======================== -->
+									<div class="swiper-slide">
 
-										<div class="pli-caption-front">
-											<div class="pli-caption">
-												<div class="pli-categories-wrap">
-													<div class="pli-category">People</div>
-													<!-- <div class="pli-category">Varia</div> -->
-												</div> <!-- /.pli-categories-wrap -->
+										<!-- Begin portfolio carousel item 
+										===================================
+										* Use class "pci-image-is-light" if needed, it makes the caption visible better (useful if you use light image). No effect on smaller screens!
+										-->
+										<a href="pakages-detail.html" class="tt-portfolio-carousel-item" data-cursor="View<br>Package">
+											<div class="tt-pci-inner">
 
-												<h2 class="pli-title">Fashion<br class="hide-from-sm"> Shoot</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-											</div> <!-- /.pli-caption -->
-										</div> <!-- /.pli-caption-front -->
+												<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css". -->
+												<figure class="tt-pci-image-wrap cover-opacity-2">
+													<img class="tt-pci-image swiper-lazy" src="./assets/img/new/package-03.jpg" data-src="./assets/img/new/package-03.jpg" alt="Image">
+												</figure> <!-- /.tt-pci-image-wrap -->
 
-										<div class="pli-caption pli-caption-back">
-											<div class="pli-categories-wrap">
-												<div class="pli-category">People</div>
-												<!-- <div class="pli-category">Varia</div> -->
-											</div> <!-- /.pli-categories-wrap -->
+												<div class="tt-pci-caption-front">
+													<div class="tt-pci-caption">
+														<div class="tt-pci-caption-inner">
+															<div class="tt-pci-categories">
+																<div class="tt-pci-category">events</div>
+																<!-- <div class="tt-pci-category">Varia</div> -->
+															</div> <!-- /.tt-pci-categories -->
+															<h2 class="tt-pci-title">Maui Luxury<br class="hide-from-sm">Picnic</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+														</div> <!-- /.tt-pci-caption-inner -->
+													</div> <!-- /.tt-pci-caption -->
+												</div> <!-- /.tt-pci-caption-front -->
 
-											<h2 class="pli-title">Fashion<br class="hide-from-sm"> Shoot</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-										</div> <!-- /.pli-caption -->
+												<div class="tt-pci-caption tt-pci-caption-back">
+													<div class="tt-pci-caption-inner">
+														<div class="tt-pci-categories">
+															<div class="tt-pci-category">events</div>
+															<!-- <div class="tt-pci-category">Varia</div> -->
+														</div> <!-- /.tt-pci-categories -->
+														<h2 class="tt-pci-title">Maui Luxury<br class="hide-from-sm">Picnic</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													</div> <!-- /.tt-pci-caption-inner -->
+												</div> <!-- /.tt-pci-caption -->
 
-										<div class="pli-counter"></div>
-									</a> 
-									<!-- End portfolio list item -->
+											</div> <!-- /.tt-pci-inner -->
+										</a>
+										<!-- End portfolio carousel item -->
 
-									<!-- Begin portfolio list item 
-									===============================
-									* Use class "pli-image-is-light" if needed, it makes the caption visible better if you use light image. 
-									-->
-									<a href="" class="portfolio-list-item" data-cursor="View<br>Project">
+									</div> 
+									<!-- End swiper slide -->
 
-										<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". No effect if "pli-image-is-light" used on "portfolio-list-item"! -->
-										<figure class="pli-image cover-opacity-2">
-											<img class="anim-image-parallax tt-lazy" src="assets/img/new/package-05.jpg" data-src="assets/img/new/package-05.jpg" alt="image">
-										</figure> <!-- /.pli-image -->
+									<!-- Begin swiper slide 
+									======================== -->
+									<div class="swiper-slide">
 
-										<div class="pli-caption-front">
-											<div class="pli-caption">
-												<div class="pli-categories-wrap">
-													<div class="pli-category">Nature</div>
-													<!-- <div class="pli-category">Varia</div> -->
-												</div> <!-- /.pli-categories-wrap -->
+										<!-- Begin portfolio carousel item 
+										===================================
+										* Use class "pci-image-is-light" if needed, it makes the caption visible better (useful if you use light image). No effect on smaller screens!
+										-->
+										<a href="pakages-detail.html" class="tt-portfolio-carousel-item" data-cursor="View<br>Package">
+											<div class="tt-pci-inner">
 
-												<h2 class="pli-title">Enchanting<br class="hide-from-sm"> Nature</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-											</div> <!-- /.pli-caption -->
-										</div> <!-- /.pli-caption-front -->
+												<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css". -->
+												<figure class="tt-pci-image-wrap cover-opacity-2">
+													<img class="tt-pci-image swiper-lazy" src="./assets/img/new/package-04.jpg" data-src="./assets/img/new/package-04.jpg" alt="Image">
+												</figure> <!-- /.tt-pci-image-wrap -->
 
-										<div class="pli-caption pli-caption-back">
-											<div class="pli-categories-wrap">
-												<div class="pli-category">Nature</div>
-												<!-- <div class="pli-category">Varia</div> -->
-											</div> <!-- /.pli-categories-wrap -->
+												<div class="tt-pci-caption-front">
+													<div class="tt-pci-caption">
+														<div class="tt-pci-caption-inner">
+															<div class="tt-pci-categories">
+																<div class="tt-pci-category">events</div>
+																<!-- <div class="tt-pci-category">Varia</div> -->
+															</div> <!-- /.tt-pci-categories -->
+															<h2 class="tt-pci-title">Oahu Beach Date<br class="hide-from-sm">Picnic</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+														</div> <!-- /.tt-pci-caption-inner -->
+													</div> <!-- /.tt-pci-caption -->
+												</div> <!-- /.tt-pci-caption-front -->
 
-											<h2 class="pli-title">Enchanting<br class="hide-from-sm"> Nature</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-										</div> <!-- /.pli-caption -->
+												<div class="tt-pci-caption tt-pci-caption-back">
+													<div class="tt-pci-caption-inner">
+														<div class="tt-pci-categories">
+															<div class="tt-pci-category">events</div>
+															<!-- <div class="tt-pci-category">Varia</div> -->
+														</div> <!-- /.tt-pci-categories -->
+														<h2 class="tt-pci-title">Oahu Beach Date<br class="hide-from-sm">Picnic</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													</div> <!-- /.tt-pci-caption-inner -->
+												</div> <!-- /.tt-pci-caption -->
 
-										<div class="pli-counter"></div>
-									</a> 
-									<!-- End portfolio list item -->
+											</div> <!-- /.tt-pci-inner -->
+										</a>
+										<!-- End portfolio carousel item -->
 
-									<!-- Begin portfolio list item 
-									===============================
-									* Use class "pli-image-is-light" if needed, it makes the caption visible better if you use light image. 
-									-->
-									<a href="" class="portfolio-list-item" data-cursor="View<br>Album">
+									</div>
+									<!-- End swiper slide -->
 
-										<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". No effect if "pli-image-is-light" used on "portfolio-list-item"! -->
-										<figure class="pli-image cover-opacity-2">
-											<img class="anim-image-parallax tt-lazy" src="./assets/img/new/package-06.jpg" data-src="./assets/img/new/package-06.jpg" alt="image">
-										</figure> <!-- /.pli-image -->
+										<!-- Begin swiper slide 
+									======================== -->
+									<div class="swiper-slide">
 
-										<div class="pli-caption-front">
-											<div class="pli-caption">
-												<div class="pli-categories-wrap">
-													<div class="pli-category">Branding</div>
-													<!-- <div class="pli-category">Varia</div> -->
-												</div> <!-- /.pli-categories-wrap -->
+										<!-- Begin portfolio carousel item 
+										===================================
+										* Use class "pci-image-is-light" if needed, it makes the caption visible better (useful if you use light image). No effect on smaller screens!
+										-->
+										<a href="pakages-detail.html" class="tt-portfolio-carousel-item" data-cursor="View<br>Package">
+											<div class="tt-pci-inner">
 
-												<h2 class="pli-title">Leyla<br class="hide-from-sm"> Stanley</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-											</div> <!-- /.pli-caption -->
-										</div> <!-- /.pli-caption-front -->
+												<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css". -->
+												<figure class="tt-pci-image-wrap cover-opacity-2">
+													<img class="tt-pci-image swiper-lazy" src="./assets/img/new/package-02.jpg" data-src="./assets/img/new/package-02.jpg" alt="Image">
+												</figure> <!-- /.tt-pci-image-wrap -->
 
-										<div class="pli-caption pli-caption-back">
-											<div class="pli-categories-wrap">
-												<div class="pli-category">Branding</div>
-												<!-- <div class="pli-category">Varia</div> -->
-											</div> <!-- /.pli-categories-wrap -->
+												<div class="tt-pci-caption-front">
+													<div class="tt-pci-caption">
+														<div class="tt-pci-caption-inner">
+															<div class="tt-pci-categories">
+																<div class="tt-pci-category">events</div>
+																<!-- <div class="tt-pci-category">Varia</div> -->
+															</div> <!-- /.tt-pci-categories -->
+															<h2 class="tt-pci-title">Romantic Proposal<br class="hide-from-sm">Picnic</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+														</div> <!-- /.tt-pci-caption-inner -->
+													</div> <!-- /.tt-pci-caption -->
+												</div> <!-- /.tt-pci-caption-front -->
 
-											<h2 class="pli-title">Leyla<br class="hide-from-sm"> Stanley</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-										</div> <!-- /.pli-caption -->
+												<div class="tt-pci-caption tt-pci-caption-back">
+													<div class="tt-pci-caption-inner">
+														<div class="tt-pci-categories">
+															<div class="tt-pci-category">events</div>
+															<!-- <div class="tt-pci-category">Varia</div> -->
+														</div> <!-- /.tt-pci-categories -->
+														<h2 class="tt-pci-title">Romantic Proposal<br class="hide-from-sm">Picnic</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
+													</div> <!-- /.tt-pci-caption-inner -->
+												</div> <!-- /.tt-pci-caption -->
 
-										<div class="pli-counter"></div>
-									</a> 
-									<!-- End portfolio list item -->
+											</div> <!-- /.tt-pci-inner -->
+										</a>
+										<!-- End portfolio carousel item -->
 
-									
-									<a href="" class="portfolio-list-item" data-cursor="View<br>Album">
-
-										<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". No effect if "pli-image-is-light" used on "portfolio-list-item"! -->
-										<figure class="pli-image cover-opacity-2">
-											<img class="anim-image-parallax tt-lazy" src="assets/img/new/package-07.jpg" data-src="assets/img/new/package-07.jpg" alt="image">
-										</figure> <!-- /.pli-image -->
-
-										<div class="pli-caption-front">
-											<div class="pli-caption">
-												<div class="pli-categories-wrap">
-													<div class="pli-category">Creative</div>
-													<!-- <div class="pli-category">Varia</div> -->
-												</div> <!-- /.pli-categories-wrap -->
-
-												<h2 class="pli-title">Modern<br class="hide-from-sm"> Interior</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-											</div> <!-- /.pli-caption -->
-										</div> <!-- /.pli-caption-front -->
-
-										<div class="pli-caption pli-caption-back">
-											<div class="pli-categories-wrap">
-												<div class="pli-category">Creative</div>
-												<!-- <div class="pli-category">Varia</div> -->
-											</div> <!-- /.pli-categories-wrap -->
-
-											<h2 class="pli-title">Modern<br class="hide-from-sm"> Interior</h2> <!-- You can use <br class="hide-from-sm"> to break a text line if needed -->
-										</div> <!-- /.pli-caption -->
-
-										<div class="pli-counter"></div>
-									</a> 
-									<!-- End portfolio list item -->
-
+									</div>
+									<!-- End swiper slide -->
 								</div>
-								<!-- End portfolio list -->
+								<!-- End swiper wrapper -->
 
+							</div>
+							<!-- End swiper container -->
 
-							
-							</div> <!-- /.tt-section-inner -->
-						</div>
-						<!-- End tt-section -->
-					
-						<!-- End tt-section -->
-						<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
-							<div class="tt-section-inner tt-wrap">
-
-								<div class="tt-page-nav tt-pn-stroke">
-									<a href="contact.html" class="tt-pn-link anim-fadeinup" data-cursor="<i class='fas fa-envelope'></i>">
-										<div class="tt-pn-title">Let's talk</div>
-										<div class="tt-pn-hover-title">Let's talk</div>
-									</a> <!-- /.tt-pn-link -->
-									<div class="tt-pn-subtitle anim-fadeinup">Get in Touch</div>
+							<!-- Begin portfolio carousel navigation 
+							========================================= -->
+							<div class="tt-pc-navigation tt-swiper-nav">
+								<div class="tt-pc-nav-prev">
+									<div class="tt-pc-arrow tt-pc-arrow-prev magnetic-item"><i class="tt-arrow-left"></i></div>
 								</div>
-								<!-- End page nav -->
+								<div class="tt-pc-nav-next">
+									<div class="tt-pc-arrow tt-pc-arrow-next magnetic-item"><i class="tt-arrow-right"></i></div>
+								</div>
+								<div class="tt-pc-pagination"></div>
+							</div>
+							<!-- End portfolio carousel navigation -->
 
-							</div> <!-- /.tt-section-inner -->
 						</div>
-						<!-- End tt-section -->
+						<!-- End portfolio carousel -->
 
 
 					</div>
@@ -515,7 +489,7 @@
 					<!-- ======================
 					///// Begin tt-footer /////
 					=========================== -->
-					<footer id="tt-footer">
+					<footer id="tt-footer" >
 						<div class="tt-footer-inner menu-footer">
 							<div class="tt-row">
 								<div class="footer-col tt-align-center-left">
