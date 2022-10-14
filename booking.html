@@ -207,9 +207,12 @@
 												<div class="tt-col-md-6">
 													<div class="tt-form-group">
 														<label>Email address</label>
-														<input class="tt-form-control" type="email" name="Email" placeholder="" required>
+														<div class="tt-form-btn-inside">
+															<input class="tt-form-control" type="email" id="subscribe" placeholder="" required>
+															<button type="submit"><i class="far fa-envelope"></i></button>
+														</div>
 													</div>
-
+													
 												</div> <!-- /.tt-col -->
 											</div> <!-- /.tt-row -->
 											<div class="tt-row">
@@ -221,34 +224,59 @@
 												</div> <!-- /.tt-col -->
 												<div class="tt-col-md-6">
 													<div class="tt-form-group">
-														<label>Picnic place<span class="required">*</span></label>
-														<input class="tt-form-control" type="text" name="place" placeholder="" required>
+														<label>Date & Time<span class="required">*</span></label>
+														<input class="tt-form-control" type="datetime-local" name="date" placeholder="" required>
 													</div>
+													
 
 												</div> <!-- /.tt-col -->
 											</div> <!-- /.tt-row -->
 											<div class="tt-form-group">
-												<label>Date & Time<span class="required">*</span></label>
-												<input class="tt-form-control" type="datetime-local" name="date" placeholder="" required>
+												<label>Picnic place<span class="required">*</span></label>
+												<select class="tt-form-control" id="09899734" size="5" multiple>
+													<option value="" disabled selected>Please choose Picnic place</option>
+													<option value="option-1">Option 1</option>
+													<option value="option-2">Option 2</option>
+													<option value="option-3">Option 3</option>
+													<option value="option-4">Option 4</option>
+													<option value="option-5">Option 5</option>
+													<option value="option-6">Option 6</option>
+													<option value="option-7">Option 7</option>
+													<option value="option-8">Option 8</option>
+													<option value="option-9">Option 9</option>
+													<option value="option-10">Option 10</option>
+												</select>
 											</div>
+
+											
 
 											<div class="tt-form-group">
 												<label>Select more option for the picnic<span class="required">*</span></label>
-												<select class="tt-form-control" name="option" required>
-													<option value="" disabled selected>Please choose more option</option>
-													<option value="value01">more flowers</option>
-													<option value="value02">more cake</option>
-													<option value="value03">more wine</option>
-												</select>
+												<div class="tt-form-check">
+													<input type="checkbox" id="48898335" checked>
+													<label for="48898335">more flowers</label>
+												</div>
+												<div class="tt-form-check">
+													<input type="checkbox" id="29908388">
+													<label for="29908388">more cake</label>
+												</div>
+												<div class="tt-form-check">
+													<input type="checkbox" id="00989897" >
+													<label for="00989897">more wine</label>
+												</div>
+			
 											</div>
 
 											<div class="tt-form-group">
-												<label>Select payments<span class="required">*</span></label>
-												<select class="tt-form-control" name="option" required>
-													<option value="" disabled selected>Please choose payments</option>
-													<option value="value01">50%</option>
-													<option value="value02">100%</option>
-												</select>
+												<label>Select payments<span class="required">*</span></label> <br>
+												<div class="tt-form-radio tt-form-radio-inline">
+													<input type="radio" name="radio2" id="78340234" checked>
+													<label for="78340234">50% payment</label>
+												</div> <br>
+												<div class="tt-form-radio tt-form-radio-inline">
+													<input type="radio" name="radio2" id="49875034">
+													<label for="49875034">100% payment</label>
+												</div>
 											</div>
 
 											<div class="tt-form-group">
