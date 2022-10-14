@@ -44,18 +44,17 @@
 
 			<!-- Begin page transition (do not remove!!!) 
 			=========================== -->
-			<div id="page-transition">
+			<!-- <div id="page-transition">
 				<div class="ptr-overlay"></div>
 				<div class="ptr-preloader">
 					<div class="ptr-prel-content">
-						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
 						<img src="assets/img/logo.svg" class="ptr-prel-image tt-logo-light" alt="Logo">
-					</div> <!-- /.ptr-prel-content -->
-				</div> <!-- /.ptr-preloader -->
-			</div>
-			<!-- End page transition -->
+					</div> 
+				</div>
+			</div> 
+			
 
-			<!-- begin loading logo screen -->
+		
 			<div class="preloader">
 				<div class="preloader-line">
 					<div></div>
@@ -67,7 +66,6 @@
 					<div></div>
 				</div>
 				<div class="preloader-logo">
-					<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In  -->
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1204.78 349.09">
 						<g id="ba1f9685-0360-43cd-ab0f-31b52b67090c" data-name="Layer 2">
 						  <g id="fed2a369-36cf-459c-941a-996bc8741372" data-name="Layer 1">
@@ -111,7 +109,7 @@
 						</g>
 					</svg>
 				</div>
-			</div>
+			</div> -->
 			<!-- end loading logo screen -->
 
 			<!-- Begin magic cursor 
@@ -130,15 +128,14 @@
 				========================
 				-->
 				<header id="tt-header" class="tt-header-fixed">
-					<div class="tt-header-inner"> 
-
+					<div class="tt-header-inner">
 						<div class="tt-header-col">
 
 							<!-- Begin logo 
 							================ -->
 							<div class="tt-logo"> 
 								<a href="index.html">
-									
+									<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
 									<img src="assets/img/logo-w.svg" class="tt-logo-light magnetic-item" alt="Logo"> <!-- logo light -->
 									<img src="assets/img/logo.svg" class="tt-logo-dark magnetic-item" alt="Logo"> <!-- logo dark -->
 								</a>
@@ -149,68 +146,40 @@
 
 						<div class="tt-header-col">
 
-							<!-- Begin overlay menu toggle button -->
-							<div id="tt-ol-menu-toggle-btn-wrap">
-								<div class="tt-ol-menu-toggle-btn-text-wrap hide-cursor">
-									<div class="tt-ol-menu-toggle-btn-text">
-										<span class="text-menu" data-hover="Open">Menu</span>
-										<span class="text-close">Close</span>
-									</div> <!-- /.tt-ol-menu-toggle-btn-text -->
-								</div> <!-- /.tt-ol-menu-toggle-btn-text-wrap -->
-								<div class="tt-ol-menu-toggle-btn-holder">
-									<div class="magnetic-wrap"><a href="#" class="tt-ol-menu-toggle-btn magnetic-item not-hide-cursor"><span></span></a></div>
-								</div> <!-- /.tt-ol-menu-toggle-btn-holder -->
+							<!-- Begin mobile menu toggle button (for "tt-main-menu") -->
+							<div id="tt-m-menu-toggle-btn-wrap">
+								<div class="tt-m-menu-toggle-btn-text">
+									<span class="tt-m-menu-text-menu">Menu</span>
+									<span class="tt-m-menu-text-close">Close</span>
+								</div>
+								<div class="tt-m-menu-toggle-btn-holder">
+									<a href="#" class="tt-m-menu-toggle-btn magnetic-item"><span></span></a>
+								</div>
 							</div>
-							<!-- End overlay menu toggle button -->
+							<!-- End mobile menu toggle button -->
 
-							<!-- Begin overlay menu 
-							======================== 
-							* Use class "tt-ol-menu-count" to enable menu counter.
+							<!-- Begin main menu (classic)
+							===============================
 							-->
-							<nav class="tt-overlay-menu tt-ol-menu-count">
-								<div class="tt-ol-menu-ghost" >Explore</div>
-								<div class="tt-ol-menu-holder">
-									<div class="tt-ol-menu-inner tt-wrap">
-										<div class="tt-ol-menu-content">
-
-											<ul class="tt-ol-menu-list">
-												<li >
-													<a href="index.html">Home</a>
-												</li>
-												<li>
-													<a href="about-us.html">About</a>
-												</li>
-												<li ><a href="#">Pakages</a></li>
-												<li>
-													<a href="partyfavors.html">Partyfavors</a>
-												</li>
-												<li>
-													<a href="gallery.html">Gallery</a>
-												</li>
-												<li >
-													<a href="blog.html">Blog</a>
-												</li>
-												<li>
-													<a href="contact.html">Contact</a>
-												</li>
+							<nav class="tt-main-menu tt-submenu-dark">
+								<div class="tt-main-menu-holder">
+									<div class="tt-main-menu-inner">
+										<div class="tt-main-menu-content">
+											<!-- Begin main menu list -->
+											<ul class="tt-main-menu-list">
+												<li class="active"><a href="index.html">Home</a></li>
+												<li><a href="about-us.html">About</a></li>
+												<li><a href="services.html">Services</a></li>
+												<li><a href="gallery.html">Gallery</a></li>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="contact.html">Contact</a></li>
 											</ul>
-											<!-- Begin overlay menu social links 
-											===================================== -->
-											<ul class="tt-ol-menu-social">
-												<li><h6 class="tt-ol-menu-social-heading">Social Links:</h6></li>
-												<li><a href="" target="_blank" rel="noopener">Facebook</a></li>
-												<li><a href="" target="_blank" rel="noopener">Twitter</a></li>
-												<li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Youtube</a></li>
-												<li><a href="" target="_blank" rel="noopener">Dribbble</a></li>
-												<li><a href="" target="_blank" rel="noopener">Behance</a></li>
-											</ul>
-											<!-- End overlay menu social links -->
-
-										</div> <!-- /.tt-ol-menu-content -->
-									</div> <!-- /.tt-ol-menu-inner -->
-								</div> <!-- /.tt-ol-menu-holder -->
+											<!-- End main menu list -->
+										</div> <!-- /.tt-main-menu-content -->
+									</div> <!-- /.tt-main-menu-inner -->
+								</div> <!-- /.tt-main-menu-holder -->
 							</nav> 
-							<!-- End overlay menu -->
+							<!-- End main menu -->
 
 						</div> <!-- /.header-col -->
 					</div> <!-- /.header-inner -->

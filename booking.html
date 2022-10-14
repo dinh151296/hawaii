@@ -4,7 +4,7 @@
 	<head>
 
 		<!-- Title -->
-		<title>Contact | anniehawaiipicnic</title>
+		<title>Booking | anniehawaiipicnic</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -138,13 +138,13 @@
 							-->
 							<div class="ph-caption">
 								<div class="ph-caption-subtitle">
-									<div class="ph-appear">Let's Talk</div>
+									<div class="ph-appear">Booking Now</div>
 								</div>
 								<h1 class="ph-caption-title">
-									<div class="ph-appear">Contact</div>
+									<div class="ph-appear">Booking</div>
 								</h1>
 								<div class="ph-caption-title-ghost">
-									<div class="ph-appear">Contact</div>
+									<div class="ph-appear">Booking</div>
 								</div>
 							</div>
 							<!-- End page header caption -->
@@ -181,63 +181,15 @@
 						<div class="tt-section">
 							<div class="tt-section-inner tt-wrap">
 
-								<div class="tt-row tt-lg-row-reverse">
-									<div class="tt-col-lg-4">
-										<div class="tt-heading margin-bottom-8-p anim-fadeinup">
-											<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
-											<h2 class="tt-heading-title">Get in Touch</h2> <!-- You can use <br> to break a text line if needed -->
-										</div>
-										<!-- End tt-Heading -->
-
-										<div class="text-gray anim-fadeinup">
-											<p>Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it.</p>
-										</div>
-
-										<!-- Begin contact info 
-										======================== -->
-										<ul class="tt-contact-info padding-bottom-40 anim-fadeinup">
-											<li>
-												<span class="tt-ci-icon"><i class="fas fa-map-marker-alt"></i></span>
-												121 King Street, Melbourne, Australia
-											</li>
-											<li>
-												<span class="tt-ci-icon"><i class="fas fa-phone"></i></span>
-												<a href="tel:+123456789000" class="tt-link">+(123) 456 789 000</a>
-											</li>
-											<li>
-												<span class="tt-ci-icon"><i class="fas fa-envelope"></i></span>
-												<a href="mailto:company@email.com" class="tt-link">company@email.com</a>
-											</li>
-											<li>
-												<h6 class="no-margin-bottom margin-top-40">Follow:</h6>
-												<!-- Begin social buttons -->
-												<div class="social-buttons">
-													<ul>
-														<li><div class="magnetic-wrap"><a href="https://www.facebook.com/themetorium" class="magnetic-item not-hide-cursor" target="_blank" rel="noopener" ><i class="fab fa-facebook-f"></i></a></div></li>
-														<li><div class="magnetic-wrap"><a href="https://twitter.com/Themetorium" class="magnetic-item not-hide-cursor" target="_blank" rel="noopener" ><i class="fab fa-twitter"></i></a></div></li>
-														<li><div class="magnetic-wrap"><a href="https://www.youtube.com/" class="magnetic-item not-hide-cursor" target="_blank" rel="noopener" ><i class="fab fa-youtube"></i></a></div></li>
-														<li><div class="magnetic-wrap"><a href="https://dribbble.com/Themetorium" class="magnetic-item not-hide-cursor" target="_blank" rel="noopener" ><i class="fab fa-dribbble"></i></a></div></li>
-														<li><div class="magnetic-wrap"><a href="https://www.behance.net/Themetorium" class="magnetic-item not-hide-cursor" target="_blank" rel="noopener" ><i class="fab fa-behance"></i></a></div></li>
-													</ul>
-												</div>
-												<!-- End social buttons -->
-											</li>
-										</ul>
-										<!-- End contact info -->
-
-									</div> <!-- /.tt-col -->
-
-									<div class="tt-col-lg-1">
-									</div> <!-- /.tt-col -->
-
-									<div class="tt-col-lg-7">
+								<div class="tt-row">
+									<div class="tt-col-lg-7 margin-auto">
 
 										<!-- Begin form 
 										================ 
 										* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
 										* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
 										-->
-										<form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
+										<form id="tt-contact-form" class="tt-form-filled anim-fadeinup ">
 
 											<!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
 											<input type="hidden" name="project_name" value="yourwebsiteaddress.com"> <!-- Change value to your site name -->
@@ -247,37 +199,55 @@
 
 											<div class="tt-row">
 												<div class="tt-col-md-6">
-
 													<div class="tt-form-group">
 														<label>Your Name <span class="required">*</span></label>
 														<input class="tt-form-control" type="text" name="Name" placeholder="" required>
 													</div>
-
 												</div> <!-- /.tt-col -->
-
 												<div class="tt-col-md-6">
-
 													<div class="tt-form-group">
-														<label>Email address <span class="required">*</span></label>
+														<label>Email address</label>
 														<input class="tt-form-control" type="email" name="Email" placeholder="" required>
 													</div>
 
 												</div> <!-- /.tt-col -->
 											</div> <!-- /.tt-row -->
+											<div class="tt-row">
+												<div class="tt-col-md-6">
+													<div class="tt-form-group">
+														<label>Your Phone Number <span class="required">*</span></label>
+														<input class="tt-form-control" type="tel" name="phone" placeholder="" required>
+													</div>
+												</div> <!-- /.tt-col -->
+												<div class="tt-col-md-6">
+													<div class="tt-form-group">
+														<label>Picnic place<span class="required">*</span></label>
+														<input class="tt-form-control" type="text" name="place" placeholder="" required>
+													</div>
 
+												</div> <!-- /.tt-col -->
+											</div> <!-- /.tt-row -->
 											<div class="tt-form-group">
-												<label>Subject <span class="required">*</span></label>
-												<input class="tt-form-control" type="text" name="Subject" placeholder="" required>
+												<label>Date & Time<span class="required">*</span></label>
+												<input class="tt-form-control" type="datetime-local" name="date" placeholder="" required>
 											</div>
 
 											<div class="tt-form-group">
-												<label>Select an option <span class="required">*</span></label>
+												<label>Select more option for the picnic<span class="required">*</span></label>
 												<select class="tt-form-control" name="option" required>
-													<option value="" disabled selected>Please choose an option</option>
-													<option value="Say Hello">Say hello</option>
-													<option value="New Project">New project</option>
-													<option value="Feedback">Feedback</option>
-													<option value="Other">Other</option>
+													<option value="" disabled selected>Please choose more option</option>
+													<option value="value01">more flowers</option>
+													<option value="value02">more cake</option>
+													<option value="value03">more wine</option>
+												</select>
+											</div>
+
+											<div class="tt-form-group">
+												<label>Select payments<span class="required">*</span></label>
+												<select class="tt-form-control" name="option" required>
+													<option value="" disabled selected>Please choose payments</option>
+													<option value="value01">50%</option>
+													<option value="value02">100%</option>
 												</select>
 											</div>
 
@@ -289,13 +259,15 @@
 											<small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
 
 											<button type="submit" class="tt-btn tt-btn-primary margin-top-30">
-												<div data-hover="Send Message">Send Message</div>
+												<div data-hover="Book Now">Book Now</div>
 												<span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
 											</button>
 										</form>
 										<!-- End form -->
 
 									</div> <!-- /.tt-col -->
+									
+									
 								</div> <!-- /.tt-row -->
 
 							</div> <!-- /.tt-section-inner -->

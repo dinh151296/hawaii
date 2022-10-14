@@ -2,15 +2,6 @@
     color: unset;
 }
 
-.logo-footer img {
-    -o-object-position: left;
-    object-position: left;
-    max-height: 48px;
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
-}
-
 .tt-ol-menu-list li a {
     color: #111111 !important;
 }
@@ -75,4 +66,99 @@
 
 .gallery__link:hover .gallery__image {
     filter: grayscale(0);
+}
+
+.bli-title__ct {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-list-item__ct {
+    margin-bottom: 40px;
+}
+
+body.tt-ph-visible #tt-header::before {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+#tt-header::before {
+    z-index: -1;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.menu-link-phone-email .tt-row {
+    width: 100%;
+    border: 1px solid #212021;
+    border-width: 1px 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.menu-link-phone-email .tt-row .footer-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 30px;
+}
+
+.menu-link-phone-email .tt-row .footer-col:first-child {
+    padding-right: 30px;
+    padding-left: 0;
+    border-right: 1px solid #212021;
+}
+
+.menu-link-phone-email .tt-row .footer-col .link-a a {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 24px !important;
+}
+
+.menu-footer .menu-footer-link h4 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.logo-footer img {
+    -o-object-position: left;
+    object-position: left;
+    max-height: 48px;
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.logo-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
